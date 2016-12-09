@@ -1,3 +1,4 @@
 ** 分支操作
-- 删除远程分支
-git push origin --delete branch
+- 删除远程分支 (默认分支一般都不能用下面的命令删除，比如：master 分支，原因是分支是受保护的。)
+- git push origin --delete branch
+- git push origin :master 
