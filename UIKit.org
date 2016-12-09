@@ -1,2 +1,4 @@
 * UITableView 相关
 ** 在设置 UITableView 中的 sectionHeaderView 或 sectionFooterView 时 如果 TableView 的样式为 Group 则在代理中返回的高度不能为 0，这时需要将高度设置为 0.001f 才会显示正确。
+* 约束
+** 如果使用约束加动画，layoutIfNeeded 需要加在父视图上。
