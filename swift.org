@@ -16,3 +16,6 @@ UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName
 #+END_SRC
 * 网络请求
 -- 在网络请求中 请求参数 不能有可选类型
+* 归档
+** Swift 文件如果需要归档， 必须基础自 NSObject。
+** 归档中如果存在 Double, Float, Int, 或者归档中自带的，一定要。
