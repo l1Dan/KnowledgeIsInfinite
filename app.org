@@ -1,0 +1,4 @@
+* ios程序的启动过程
+** 大致可以分为三部分
+- 加载 AppDelegate 中 window 的 rootViewController，如果没有就加载plist中指定的.Storyboard 中箭头指向的控制器，再没有就会直接显示window。
+- 

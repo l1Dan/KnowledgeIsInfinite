@@ -1,0 +1,18 @@
+* 解决闭包循环引用
+** 使用 weak 关键字
+- weak var weakSelf = self 不常用。
+- [weak self] 这是self 就是可选类型了，常用。
+- [unowned self] 这个会自己强制解包，不常用。
+* 条件编译
+** Build Settings -> Search swift flag -> Debug -> -D DEBUG
+* 类型转换
+- 如果取出来的类型为 Class.Type 我们需要进行初始化 (Class.init()) 
+
+* 函数相关
+** 如果扩充一个现有类的构造函数 我们需要在构造函数前面加上 convenience 关键字。并且需要明确调用 self.init() 函数。
+** UITabBarItem 设置
+#+BEGIN_SRC swift
+UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.lightGray], for: .normal)
+#+END_SRC
+* 网络请求
+-- 在网络请求中 请求参数 不能有可选类型
