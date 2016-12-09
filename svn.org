@@ -1,0 +1,2 @@
+* log 操作
+** 显示前面 x 条提交记录 svn log | head -n 10
