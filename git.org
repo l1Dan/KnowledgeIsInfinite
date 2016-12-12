@@ -1,4 +1,8 @@
 ** 分支操作
-- 删除远程分支 (默认分支一般都不能用下面的命令删除，比如：master 分支，原因是分支是受保护的。)
-- git push origin --delete branch
-- git push origin :master 
+*** 删除远程分支 (默认分支一般都不能用下面的命令删除，比如：master 分支，原因是分支是受保护的。)
+*** git push origin --delete branch
+*** git push origin :master 
+
+** 全局配置
+*** 修改默认 vim 编辑器 为 emacs
+git config --global core.editor emacs
