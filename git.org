@@ -6,3 +6,9 @@
 ** 全局配置
 *** 修改默认 vim 编辑器 为 emacs
 git config --global core.editor emacs
+** 修改提交注释或历史
+*** 修改上次还没有 push 到服务器的提交注释 git commit --amend
+*** 修改已经 push 到服务器的提交注释
+--- step 1: git rebase -i HEAD~3 修改倒数第三次的提交注释 然后按 `e` 保存退出。
+--- step 2: git commit --amend 来对标记为 `e` 的记录修改 然后 保存退出。
+--- step 3: git rebase --continue 提交 完成。
