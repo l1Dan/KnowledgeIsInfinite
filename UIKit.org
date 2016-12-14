@@ -3,3 +3,5 @@
 ** 如果 UITableView 注册使用的重用 Cell 需要调用 IndexPath 的方法， 如果是从 SB 中创建的 就不需要调用。
 * 约束
 ** 如果使用约束加动画，layoutIfNeeded 需要加在父视图上。
+** 约束冲突 错误 "<NSLayoutConstraint:0x610000285910 'UIView-Encapsulated-Layout-Width' CloudService.ShopfrontFooterView:0x7fca8d501050.width == 0   (active)>"
+-- 只需要将冲突的约束的优先级改低就可以
