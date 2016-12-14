@@ -3,6 +3,11 @@
 *** git push origin --delete branch
 *** git push origin :master 
 
+*** 分支重命名
+--- step1: git branch -m <old-branch> <new-branch> 先重命名本地分支
+--- step2: git push origin --delete <old-branch>  删除远程分支
+--- step3: git push origin <new-branch> push push 本地分支到远程分支
+
 ** 全局配置
 *** 修改默认 vim 编辑器 为 emacs
 git config --global core.editor emacs
