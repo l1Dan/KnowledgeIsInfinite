@@ -5,3 +5,5 @@
 print('hello, world')
 #+END_SRC
 -- 添加执行权限 chmod a+x hello.py
+** 修改python 默认 版本
+*** alias python="/usr/local/Cellar/python3/3.5.2_3/Frameworks/Python.framework/Versions/3.5/bin/python3"
