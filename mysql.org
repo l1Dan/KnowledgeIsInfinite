@@ -1,0 +1,10 @@
+** 如果 mysql 的 my.cnf 没有在 /etc 目录下找到 可以 从 mysql 安装目录下的 Support files 下面 找到 并拷贝。
+** 启动 mysql mysql.server start 重启 mysql.server restart
+
+** mysql 错误
+*** Table 'performance_schema.session_variables' doesn't exist 使用 mysql_upgrade -u root -p --force
+*** rror: 'Access denied for user 'root'@'localhost' (using password: YES)'
+1. ps -ef | grep -v grep | grep  mysql | awk '{print $2}' | xargs kill -9
+2. mysqld_safe --skip-grant-tables &
+3. mysql -uroot -p
+4. update user set password=password('123456') where user = 'root';

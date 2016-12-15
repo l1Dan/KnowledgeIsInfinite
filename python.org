@@ -1,0 +1,7 @@
+** 交互式
+*** 直接运行 py 文件
+#+BEGIN_SRC python
+#!/usr/bin/env python3
+print('hello, world')
+#+END_SRC
+-- 添加执行权限 chmod a+x hello.py
