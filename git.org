@@ -17,3 +17,4 @@ git config --global core.editor emacs
 --- step 1: git rebase -i HEAD~3 修改倒数第三次的提交注释 然后按 `e` 保存退出。
 --- step 2: git commit --amend 来对标记为 `e` 的记录修改 然后 保存退出。
 --- step 3: git rebase --continue 提交 完成。
+*** git blame <file> 查看一个文件的修改历史
