@@ -5,3 +5,5 @@
 ** 如果使用约束加动画，layoutIfNeeded 需要加在父视图上。
 ** 约束冲突 错误 "<NSLayoutConstraint:0x610000285910 'UIView-Encapsulated-Layout-Width' CloudService.ShopfrontFooterView:0x7fca8d501050.width == 0   (active)>"
 -- 只需要将冲突的约束的优先级改低就可以
+* UIScrollerView 相关
+** 设置垂直方向总是能滚动 alwaysBounceVertical = true
