@@ -1,0 +1,2 @@
+** 更新 cocoapods sudo gem install cocoapods --pre
+** 更新 cocoapods git 仓库 pod repo update --verbose
